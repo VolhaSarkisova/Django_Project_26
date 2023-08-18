@@ -5,6 +5,8 @@ from project.models import Projects, Status, Priority, Tasks
 # admin.site.register(Status)
 # admin.site.register(Priority)
 # admin.site.register(Tasks)
+
+
 def capitalize_title(modeladmin, request, queryset):
     for model in queryset:
         model.name = model.name.capitalize()
